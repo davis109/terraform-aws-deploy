@@ -1,0 +1,103 @@
+# ========================================
+# Terraform State (NEVER COMMIT!)
+# ========================================
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+.terraform.lock.hcl
+terraform.tfvars
+*.auto.tfvars
+
+# ========================================
+# AWS Credentials (CRITICAL - NEVER COMMIT!)
+# ========================================
+.aws/
+*.pem
+*.key
+credentials
+config
+*.credentials
+
+# ========================================
+# Lambda Deployment Packages
+# ========================================
+lambda/*.zip
+*.zip
+
+# ========================================
+# Python
+# ========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ========================================
+# IDE / Editor
+# ========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# ========================================
+# OS Files
+# ========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# ========================================
+# Logs
+# ========================================
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ========================================
+# Environment Variables (NEVER COMMIT!)
+# ========================================
+.env
+.env.local
+.env.*.local
+
+# ========================================
+# Temporary Files
+# ========================================
+*.tmp
+*.temp
+tmp/
+temp/
